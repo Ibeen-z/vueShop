@@ -87,7 +87,7 @@
       title="添加分类"
       :visible.sync="addCateDialogVisible"
       width="40%"
-      @close="addCateFormClose"
+      @close="addFormClose"
     >
       <!-- 添加分类的表单 -->
       <el-form
