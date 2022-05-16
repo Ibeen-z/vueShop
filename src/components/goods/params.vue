@@ -26,6 +26,7 @@
             :options="cateList"
             :props="cascaderProps"
             @change="handleChange"
+            expand-trigger="hover"
             clearable
           ></el-cascader>
         </el-col>
@@ -225,8 +226,6 @@ export default {
         value: "cat_id",
         label: "cat_name",
         children: "children",
-        checkStrictly: true,
-        expandTrigger: "hover",
       },
       // 页签默认选中参数
       activeName: "many",

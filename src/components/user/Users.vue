@@ -54,7 +54,11 @@
           label="创建时间"
           sortable
           width="170"
-        ></el-table-column>
+        >
+        <template slot-scope="scope">
+                  {{scope.row.create_time | dateFormat}}
+          </template>
+        </el-table-column>
         <el-table-column
           prop="email"
           label="email"

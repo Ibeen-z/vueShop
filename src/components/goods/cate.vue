@@ -87,7 +87,7 @@
       title="添加分类"
       :visible.sync="addCateDialogVisible"
       width="40%"
-      @close="addFormClose"
+      @close="addCateFormClose"
     >
       <!-- 添加分类的表单 -->
       <el-form
@@ -105,6 +105,7 @@
             :options="parentCateList"
             :props="cascaderProps"
             @change="parentCateChange"
+            expand-trigger="hover"
             clearable
           ></el-cascader>
         </el-form-item>
@@ -198,9 +199,7 @@ export default {
       cascaderProps: {
         value: "cat_id",
         label: "cat_name",
-        children: "children",
-        checkStrictly: true,
-        expandTrigger: "hover",
+        children: "children"
       },
       // 修改对话框的显示与隐藏
       editDialogVisble: false,

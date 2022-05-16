@@ -7,3 +7,6 @@ body,
     padding: 0;
     min-width: 1366px;
 }
+.ql-editor{
+    min-height: 300px;
+}
