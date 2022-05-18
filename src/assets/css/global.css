@@ -10,3 +10,10 @@ body,
 .ql-editor{
     min-height: 300px;
 }
+.el-card{
+    margin-top: 15px;
+}
+.el-table{
+    font-size: 13px;
+    margin: 15px 0;
+}
